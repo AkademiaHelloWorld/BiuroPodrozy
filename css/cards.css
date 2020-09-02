@@ -1,0 +1,58 @@
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-top: 250px;
+}
+
+@media (max-width: 1000px) {
+    .cards {
+        margin-top: 0;
+    }
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 500px;
+    margin-top: 20px;
+}
+ 
+.cardText {
+    margin-top: 10px;
+    color: #04bbe9;
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+}
+
+.cardImage {
+    width: 100%;
+}
+
+.cardTextContainer {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.cardIconBackground {
+    border-radius: 50%;
+    max-width: 150px;
+    max-height: 150px;
+    padding: 30px;
+    background-color: #04bbe9;
+}
+
+.cardIcon {
+    max-width: 100px;   
+}
+
+.zoom {
+    transition: transform .2s;
+    margin-bottom: 20px;
+}
+
+.zoom :hover {
+    transform: scale(1.3);
+}
